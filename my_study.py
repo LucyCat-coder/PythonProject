@@ -1,7 +1,7 @@
-salary = float(input("Укажите вашу заработную плату в месяц: "))
-hypothec_percent = float(input("Укажите, какой процент(%) уходит на ипотеку: "))
-life_percent = float(input("Укажите, какой процент(%) уходит на жизнь: "))
-time_period = int(input("За какой временной отрезок в месяцах нужно рассчитать: "))
+salary = int(input("Укажите вашу заработную плату в месяц: "))
+hypothec_percent = int(input("Укажите, какой процент(%) уходит на ипотеку: "))
+life_percent = int(input("Укажите, какой процент(%) уходит на жизнь: "))
+time_period = int(input("За сколько месяцев нужно рассчитать: "))
 hypothec_money = (salary * hypothec_percent / 100) * time_period
 life_money = (salary * life_percent / 100) * time_period
 saved_money = salary * time_period - (hypothec_money + life_money)
