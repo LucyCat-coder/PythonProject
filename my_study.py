@@ -2,9 +2,9 @@ salary = int(input("Укажите вашу заработную плату в �
 hypothec_percent = int(input("Укажите, какой процент(%) уходит на ипотеку: "))
 life_percent = int(input("Укажите, какой процент(%) уходит на жизнь: "))
 time_period = int(input("За сколько месяцев нужно рассчитать: "))
-hypothec_money = (salary * hypothec_percent / 100) * time_period
-life_money = (salary * life_percent / 100) * time_period
-saved_money = salary * time_period - (hypothec_money + life_money)
+hypothec_money = int((salary * hypothec_percent / 100) * time_period)
+life_money = int((salary * life_percent / 100) * time_period)
+saved_money = int(salary * time_period - (hypothec_money + life_money))
 print("На ипотеку было потрачено: ", hypothec_money)
 print("На жизнь было потрачено: ", life_money)
 print("Было накоплено: ", saved_money)
